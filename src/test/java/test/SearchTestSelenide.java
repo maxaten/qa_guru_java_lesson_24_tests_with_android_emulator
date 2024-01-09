@@ -1,5 +1,6 @@
 package test;
 
+import io.appium.java_client.AppiumBy;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -46,7 +47,7 @@ public class SearchTestSelenide extends TestBase {
         });
 
         step(String.format("Выбрать элемент %s в списке", name2), () -> {
-            $$(className("android.view.ViewGroup")).get(1).click();
+            $$(AppiumBy.id("org.wikipedia.alpha:id/page_list_item_container")).first().click();
         });
 
         step(String.format("Выбрать элемент %s в списке", name2), () -> {
