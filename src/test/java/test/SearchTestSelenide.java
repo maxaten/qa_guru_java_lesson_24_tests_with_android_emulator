@@ -46,7 +46,7 @@ public class SearchTestSelenide extends TestBase{
         });
 
         step(String.format("Выбрать элемент %s в списке", name2),() -> {
-            $$(className("android.view.ViewGroup")).get(0).click();
+            $$(className("android.view.ViewGroup")).get(1).click();
         });
 
         step(String.format("Выбрать элемент %s в списке", name2),() -> {
