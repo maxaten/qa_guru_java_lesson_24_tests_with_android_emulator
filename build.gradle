@@ -66,8 +66,8 @@ tasks.withType(Test) {
     }
 }
 
-task conbined_test(type: Test) {
+task android_test(type: Test) {
     useJUnitPlatform {
-        includeTags("ui")
+        includeTags("android")
     }
 }
