@@ -8,4 +8,4 @@
 
 #### Вынести данные (логин, пароль, урл браузерстека и т.д.) в .properties с owner
 
-#### Сделать сборку в [дженкинсе](https://jenkins.autotests.cloud/job/qa_guru_allure_example_23_maxaten/2/allure/#)
+#### Сделать сборку в [дженкинсе](https://jenkins.autotests.cloud/job/qa_guru_allure_example_23_maxaten/3/allure/)
