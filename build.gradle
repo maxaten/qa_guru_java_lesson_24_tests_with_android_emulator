@@ -1,7 +1,6 @@
 plugins {
     id 'java-library'
     id 'io.qameta.allure' version '2.11.2'
-    id "io.freefair.lombok" version "8.4"
 }
 
 repositories {
@@ -12,11 +11,8 @@ compileTestJava {
     options.encoding = 'UTF-8'
 }
 
-def allureVersion = '2.24.0',
-    restAssuredVersion = "5.3.2",
-        selenideVersion = "6.13.0",
-        junitVersion = '5.10.1',
-        appiumVersion = '8.4.0';
+
+def allureVersion = "2.21.0"
 
 allure {
     report {
@@ -32,22 +28,17 @@ allure {
     }
 }
 
-
 dependencies {
-
     testImplementation(
-            "com.codeborne:selenide:$selenideVersion",
-            "org.junit.jupiter:junit-jupiter:$junitVersion",
-            "io.rest-assured:rest-assured:$restAssuredVersion",
-            "io.rest-assured:json-schema-validator:$restAssuredVersion",
-            'org.projectlombok:lombok:1.18.30',
-            'org.aeonbits.owner:owner:1.0.4',
+            'com.codeborne:selenide:6.13.0',
             "io.qameta.allure:allure-selenide:$allureVersion",
-            "io.qameta.allure:allure-rest-assured:$allureVersion",
-            "io.appium:java-client:$appiumVersion"
+            'io.appium:java-client:8.3.0',
+            'io.rest-assured:rest-assured:5.3.0',
+            "commons-io:commons-io:2.11.0",
+            'org.junit.jupiter:junit-jupiter:5.9.3',
+            'org.slf4j:slf4j-simple:2.0.7',
+            'org.aeonbits.owner:owner:1.0.12'
     )
-
-    testRuntimeOnly("org.slf4j:slf4j-simple:2.0.7")
 }
 
 tasks.withType(JavaCompile) {
@@ -55,7 +46,6 @@ tasks.withType(JavaCompile) {
 }
 
 tasks.withType(Test) {
-    systemProperties(System.getProperties())
     useJUnitPlatform()
 
     testLogging {
@@ -66,8 +56,13 @@ tasks.withType(Test) {
     }
 }
 
-task android_test(type: Test) {
+tasks.register("testByTags", Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform {
-        includeTags("android")
+        def tags = System.getProperty("tags", "")
+        tags.split(",").each { String str ->
+            def tag = str.trim()
+            if (tag != "") includeTags(tag)
+        }
     }
 }
