@@ -46,6 +46,7 @@ tasks.withType(JavaCompile) {
 }
 
 tasks.withType(Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform()
 
     testLogging {
@@ -56,13 +57,14 @@ tasks.withType(Test) {
     }
 }
 
-tasks.register("testByTags", Test) {
-    systemProperties(System.getProperties())
+task android(type: Test) {
     useJUnitPlatform {
-        def tags = System.getProperty("tags", "")
-        tags.split(",").each { String str ->
-            def tag = str.trim()
-            if (tag != "") includeTags(tag)
-        }
+        includeTags("emulator")
+    }
+}
+
+task wikipediaEmulator(type: Test) {
+    useJUnitPlatform {
+        includeTags("browserstack")
     }
 }
