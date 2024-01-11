@@ -1,4 +1,4 @@
-package test_android;
+package test;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 
-public class SearchTestSelenideAndroid extends TestBase {
+public class TestAndroid extends TestBase {
 
 
     private OnboardingPage onboardingPage = new OnboardingPage();
@@ -27,6 +27,7 @@ public class SearchTestSelenideAndroid extends TestBase {
     String name1 = "Appium";
 
     @Test
+    @DisplayName("Проверка поиска")
     @Tags({@Tag("browserstack "), @Tag("regress")})
     void successfulSearchTestBrowserstack() {
 
@@ -46,6 +47,7 @@ public class SearchTestSelenideAndroid extends TestBase {
 
 
     @Test
+    @DisplayName("Проверка поиска")
     @Tags({@Tag("regress"), @Tag("emulator")})
     void successfulSearchTest() {
 
@@ -65,6 +67,7 @@ public class SearchTestSelenideAndroid extends TestBase {
     }
 
     @Test
+    @DisplayName("Проверка искомого запроса в статье")
     @Tag("emulator")
     void successfulSearchAndClickTest() {
 
@@ -83,7 +86,7 @@ public class SearchTestSelenideAndroid extends TestBase {
             searchResultPage.clickOnFirstSearch();
         });
 
-        step(String.format("Выбрать элемент %s в списке", name2), () -> {
+        step(("Искомый запрос в статье присутствует"), () -> {
             informationPage.checkVisible()
                     .checkText(name2);
         });
