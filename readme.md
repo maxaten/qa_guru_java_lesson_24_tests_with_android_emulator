@@ -16,17 +16,23 @@
 
 * <a href="#cases">Примеры автоматизированных тест-кейсов</a>
 
-* <a href="#jenkins">Сборка в Jenkins</a>
-
 * <a href="#console">Запуск из терминала</a>
 
-* <a href="#allure">Allure отчет</a>
+* <a href="#allure_emulator">Отчет Allure при запуске локально на эмуляторе</a>
+
+* <a href="#emulator_video">Пример видео выполнения тестов на Эмуляторе</a>
+
+* <a href="#allure">Отчет Allure при запуске через Browserstack</a>
+
+* <a href="#jenkins">Сборка в Jenkins</a>
 
 * <a href="#allure-testops">Интеграция с Allure TestOps</a>
 
 * <a href="#jira">Интеграция с Jira</a>
 
 * <a href="#telegram">Уведомление в Telegram при помощи бота</a>
+
+* <a href="#browserstack_video">Пример видео выполнения тестов на Browserstack</a>
 
 ---
 
@@ -35,14 +41,14 @@
 
 <p align="center">  
 <a href="https://www.jetbrains.com/idea/"><img src="images/logo/Intelij_IDEA.svg" title="Intellij_IDEA" width="50" height="50"  alt="IDEA"/></a>  
-<a href="https://www.java.com/"><img src="images/logo/Java.svg"title="Java" width="50" height="50"  alt="Java"/></a>  
+<a href="https://www.java.com/"><img src="images/logo/Java.svg" title="Java" width="50" height="50"  alt="Java"/></a>  
 <a href="https://github.com/"><img src="images/logo/github-original.svg" title="Github" width="50" height="50"  alt="Github"/></a>  
 <a href="https://junit.org/junit5/"><img src="images/logo/JUnit5.svg" title="JUnit5" width="50" height="50"  alt="JUnit 5"/></a>  
 <a href="https://gradle.org/"><img src="images/logo/gradle-plain.svg" title="Gradle" width="50" height="50"  alt="Gradle"/></a>  
 <a href="https://selenide.org/"><img src="images/logo/Selenide.svg" title="Selenide" width="50" height="50"  alt="Selenide"/></a>  
-<a href="https://selenide.org/"><img src="images/logo/Android-studio.svg" title="Android-studio" width="50" height="50"  alt="Selenide"/></a>  
-<a href="https://selenide.org/"><img src="images/logo/Appium.svg" title="Appium.svg" width="50" height="50"  alt="Selenide"/></a>  
-<a href="https://selenide.org/"><img src="images/logo/Browserstack.svg" title="Browserstack.svg" width="50" height="50"  alt="Selenide"/></a>  
+<a href="https://developer.android.com/studio/"><img src="images/logo/Android-studio.svg" title="Android-studio" width="50" height="50"  alt="Selenide"/></a>  
+<a href="https://appium.io/docs/en/2.4/"><img src="images/logo/Appium.svg" title="Appium.svg" width="50" height="50"  alt="Selenide"/></a>  
+<a href="https://app-automate.browserstack.com/"><img src="images/logo/Browserstack.svg" title="Browserstack.svg" width="50" height="50"  alt="Selenide"/></a>  
 <a href="ht[images](images)tps://github.com/allure-framework/allure2"><img src="images/logo/Allure.svg" title="Allure" width="50" height="50"  alt="Allure"/></a> 
 <a href="https://qameta.io/"><img src="images/logo/Allure2.svg" title="Allure TestOps" width="50" height="50" alt="Allure TestOps"/></a>   
 <a href="https://www.jenkins.io/"><img src="images/logo/Jenkins.svg" title="Jenkins" width="50" height="50"  alt="Jenkins"/></a>  
@@ -59,7 +65,8 @@
 - *Проверка текстов на экранах онбординга*
 
 
-## Запуск тестов из терминала
+<a id="console"></a>
+## <a name="Запуск тестов из терминала">**Запуск тестов из терминала:**</a>
 
 ***Локальный запуск тестов:***
 ```bash
@@ -74,7 +81,7 @@ gradle clean test -DdeviceHost=browserstack
 
 
 ---
-<a id="allure"></a>
+<a id="allure_emulator"></a>
 ## <img alt="Allure" height="25" src="images/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Отчет Allure при запуске локально на эмуляторе</a>
 
 ### *Основная страница отчёта*
@@ -90,7 +97,7 @@ gradle clean test -DdeviceHost=browserstack
 </p>
 
 ---
-<a id="video"></a>
+<a id="emulator_video"></a>
 ## <img alt="Android" height="25" src="images/logo/Android-studio.svg" width="25"/></a> Пример видео выполнения тестов на Эмуляторе
 
 <p align="center">
@@ -158,4 +165,12 @@ ___
 
 <p align="center">  
 <img title="Telegram Overview Dashboard" src="images/screen/Telegram.png" width="452">  
+</p>
+
+---
+<a id="browserstack_video"></a>
+## <img alt="Android" height="25" src="images/logo/Browserstack.svg" width="25"/></a> Пример видео выполнения тестов на Browserstack
+
+<p align="center">
+<img title="Browserstack Video" src="images/video/browserstack.gif" width="320" height=""  alt="video">   
 </p>
