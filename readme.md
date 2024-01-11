@@ -16,17 +16,23 @@
 
 * <a href="#cases">Примеры автоматизированных тест-кейсов</a>
 
-* <a href="#jenkins">Сборка в Jenkins</a>
-
 * <a href="#console">Запуск из терминала</a>
 
-* <a href="#allure">Allure отчет</a>
+* <a href="#allure_emulator">Отчет Allure при запуске локально на эмуляторе</a>
+
+* <a href="#emulator_video">Пример видео выполнения тестов на Эмуляторе</a>
+
+* <a href="#allure">Отчет Allure при запуске через Browserstack</a>
+
+* <a href="#jenkins">Сборка в Jenkins</a>
 
 * <a href="#allure-testops">Интеграция с Allure TestOps</a>
 
 * <a href="#jira">Интеграция с Jira</a>
 
 * <a href="#telegram">Уведомление в Telegram при помощи бота</a>
+
+* <a href="#browserstack_video">Пример видео выполнения тестов на Browserstack</a>
 
 ---
 
@@ -59,7 +65,8 @@
 - *Проверка текстов на экранах онбординга*
 
 
-## Запуск тестов из терминала
+<a id="console"></a>
+## <a name="Запуск тестов из терминала">**Запуск тестов из терминала:**</a>
 
 ***Локальный запуск тестов:***
 ```bash
@@ -74,7 +81,7 @@ gradle clean test -DdeviceHost=browserstack
 
 
 ---
-<a id="allure"></a>
+<a id="allure_emulator"></a>
 ## <img alt="Allure" height="25" src="images/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Отчет Allure при запуске локально на эмуляторе</a>
 
 ### *Основная страница отчёта*
@@ -90,7 +97,7 @@ gradle clean test -DdeviceHost=browserstack
 </p>
 
 ---
-<a id="video"></a>
+<a id="emulator_video"></a>
 ## <img alt="Android" height="25" src="images/logo/Android-studio.svg" width="25"/></a> Пример видео выполнения тестов на Эмуляторе
 
 <p align="center">
@@ -158,4 +165,12 @@ ___
 
 <p align="center">  
 <img title="Telegram Overview Dashboard" src="images/screen/Telegram.png" width="452">  
+</p>
+
+---
+<a id="browserstack_video"></a>
+## <img alt="Android" height="25" src="images/logo/Browserstack.svg" width="25"/></a> Пример видео выполнения тестов на Browserstack
+
+<p align="center">
+<img title="Browserstack Video" src="images/video/browserstack.gif" width="320" height=""  alt="video">   
 </p>
