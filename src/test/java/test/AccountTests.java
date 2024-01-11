@@ -21,7 +21,7 @@ public class AccountTests extends TestBase {
     private final static String EMAIL = "Email (Optional)";
 
     @Test
-    @Tags({@Tag("browserstack "), @Tag("login")})
+    @Tags({@Tag("browserstack"), @Tag("login")})
     @Owner("Bruce")
     @Feature("Авторизация в Википедии")
     @Story("Страница Логина в Википедии")
