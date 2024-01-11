@@ -40,7 +40,9 @@
 <a href="https://junit.org/junit5/"><img src="images/logo/JUnit5.svg" title="JUnit5" width="50" height="50"  alt="JUnit 5"/></a>  
 <a href="https://gradle.org/"><img src="images/logo/gradle-plain.svg" title="Gradle" width="50" height="50"  alt="Gradle"/></a>  
 <a href="https://selenide.org/"><img src="images/logo/Selenide.svg" title="Selenide" width="50" height="50"  alt="Selenide"/></a>  
-<a href="https://selenide.org/"><img src="images/logo/RestAssured.png" title="RestAssured" width="50" height="50"  alt="Selenide"/></a>  
+<a href="https://selenide.org/"><img src="images/logo/Android-studio.svg" title="Android-studio" width="50" height="50"  alt="Selenide"/></a>  
+<a href="https://selenide.org/"><img src="images/logo/Appium.svg" title="Appium.svg" width="50" height="50"  alt="Selenide"/></a>  
+<a href="https://selenide.org/"><img src="images/logo/Browserstack.svg" title="Browserstack.svg" width="50" height="50"  alt="Selenide"/></a>  
 <a href="ht[images](images)tps://github.com/allure-framework/allure2"><img src="images/logo/Allure.svg" title="Allure" width="50" height="50"  alt="Allure"/></a> 
 <a href="https://qameta.io/"><img src="images/logo/Allure2.svg" title="Allure TestOps" width="50" height="50" alt="Allure TestOps"/></a>   
 <a href="https://www.jenkins.io/"><img src="images/logo/Jenkins.svg" title="Jenkins" width="50" height="50"  alt="Jenkins"/></a>  
@@ -55,6 +57,61 @@
 - *Проверка поиска*
 - *Проверка искомого запроса в статье*
 - *Проверка текстов на экранах онбординга*
+
+
+## Запуск тестов из терминала
+
+***Локальный запуск тестов:***
+```bash
+ gradle clean test -DdeviceHost=emulator
+```
+
+***Удаленный запуск тестов:***
+
+```bash
+gradle clean test -DdeviceHost=browserstack
+```
+
+
+---
+<a id="allure"></a>
+## <img alt="Allure" height="25" src="images/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Отчет Allure при запуске на эмуляторе</a>
+
+### *Основная страница отчёта*
+
+<p align="center">  
+<img title="Allure Overview Dashboard" src="images/screen/Allure_emulator.png" width="1920">  
+</p>
+
+### *Тест-кейсы*
+
+<p align="center">  
+<img title="Allure Tests" src="images/screen/Allure_emulator_cases.png" width="1920">  
+</p>
+
+---
+<a id="video"></a>
+## <img alt="Android" height="25" src="images/logo/Android-studio.svg" width="25"/></a> Пример видео выполнения тестов на Эмуляторе
+
+<p align="center">
+<img title="Selenoid Video" src="images/video/vid.gif" width="320" height=""  alt="video">   
+</p>
+
+
+<a id="allure"></a>
+## <img alt="Allure" height="25" src="images/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Отчет Allure при запуске через Browserstack</a>
+
+### *Основная страница отчёта*
+
+<p align="center">  
+<img title="Allure Overview Dashboard" src="images/screen/Allure_emulator.png" width="1920">  
+</p>
+
+### *Тест-кейсы*
+
+<p align="center">  
+<img title="Allure Tests" src="images/screen/Allure_emulator_cases.png" width="1920">  
+</p>
 
 
 ---

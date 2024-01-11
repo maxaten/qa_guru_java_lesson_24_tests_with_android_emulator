@@ -1,5 +1,9 @@
 package test;
 
+import io.qameta.allure.Feature;
+import io.qameta.allure.Issue;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
@@ -27,6 +31,10 @@ public class TestAndroid extends TestBase {
     String name1 = "Appium";
 
     @Test
+    @Owner("Bruce")
+    @Story("Wikia")
+    @Feature("Поиск")
+    @Issue("HOMEWORK-1043")
     @DisplayName("Проверка поиска")
     @Tags({@Tag("browserstack "), @Tag("regress")})
     void successfulSearchTestBrowserstack() {
@@ -47,6 +55,10 @@ public class TestAndroid extends TestBase {
 
 
     @Test
+    @Owner("Bruce")
+    @Story("Wikia")
+    @Feature("Поиск")
+    @Issue("HOMEWORK-1043")
     @DisplayName("Проверка поиска")
     @Tags({@Tag("regress"), @Tag("emulator")})
     void successfulSearchTest() {
@@ -67,6 +79,10 @@ public class TestAndroid extends TestBase {
     }
 
     @Test
+    @Owner("Bruce")
+    @Story("Wikia")
+    @Feature("Поиск")
+    @Issue("HOMEWORK-1043")
     @DisplayName("Проверка искомого запроса в статье")
     @Tag("emulator")
     void successfulSearchAndClickTest() {
@@ -93,7 +109,11 @@ public class TestAndroid extends TestBase {
     }
 
     @Test
+    @Owner("Bruce")
+    @Story("Wikia")
+    @Feature("Онбординг")
     @Tag("emulator")
+    @Issue("HOMEWORK-1043")
     @DisplayName("Проверка текстов на экранах онбординга")
     void checkOnboardingTest() {
         step("Проверка первого экрана", () -> {
