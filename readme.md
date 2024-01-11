@@ -75,7 +75,7 @@ gradle clean test -DdeviceHost=browserstack
 
 ---
 <a id="allure"></a>
-## <img alt="Allure" height="25" src="images/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Отчет Allure при запуске на эмуляторе</a>
+## <img alt="Allure" height="25" src="images/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Отчет Allure при запуске локально на эмуляторе</a>
 
 ### *Основная страница отчёта*
 
@@ -104,85 +104,35 @@ gradle clean test -DdeviceHost=browserstack
 ### *Основная страница отчёта*
 
 <p align="center">  
-<img title="Allure Overview Dashboard" src="images/screen/Allure_emulator.png" width="1920">  
+<img title="Allure Overview Dashboard" src="images/screen/Allure_report_browserstack.png" width="1920">  
 </p>
 
 ### *Тест-кейсы*
 
 <p align="center">  
-<img title="Allure Tests" src="images/screen/Allure_emulator_cases.png" width="1920">  
+<img title="Allure Tests" src="images/screen/Allure_bs_testcases.png" width="1920">  
 </p>
 
 
 ---
 <a id="jenkins"></a>
-## <img alt="Jenkins" height="25" src="images/logo/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/qa_guru_java_api_diplom_maxaten/)</a>
+## <img alt="Jenkins" height="25" src="images/logo/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/qa_guru_allure_example_23_maxaten/)</a>
 
 
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/Project%20qa_guru_java_lesson_17_mag_maxaten/"><img src="images/screen/jenkins_build.png" alt="Jenkins" width="1920"/></a>  
+<a href="https://jenkins.autotests.cloud/job/Project%20qa_guru_java_lesson_17_mag_maxaten/"><img src="images/screen/Browserstack_jenkins.png" alt="Jenkins" width="1920"/></a>  
 </p>
 
----
-<a id="console"></a>
-## Команды для запуска из терминала
 
-
-## Запуск тестов из терминала
-
-***Локальный запуск тестов:***
-```bash
- gradle clean test -DdeviceHost=emulator
-```
-
-***Удаленный запуск тестов:***
-
-```bash
-gradle clean test -DdeviceHost=browserstack
-```
-
-При выполнении команды, данные тесты запустятся удаленно в <code>Browserstack</code>
-
-При необходимости также можно переопределить параметры запуска:
-
-```
-clean testByTags
--Dtags=${TAGS} 
--DdeviceHost=${DEVICE_HOST} 
-```
-
----
-<a id="allure"></a>
-## <img alt="Allure" height="25" src="images/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Отчет [Allure](https://jenkins.autotests.cloud/job/qa_guru_java_api_diplom_maxaten/allure/#)</a>
-
-### *Основная страница отчёта*
-
-<p align="center">  
-<img title="Allure Overview Dashboard" src="images/screen/allure_report.png" width="1920">  
-</p>
-
-### *Тест-кейсы*
-
-<p align="center">  
-<img title="Allure Tests" src="images/screen/testcase_in_allure.png" width="1920">  
-</p>
-
-### *Графики*
-
-  <p align="center">  
-<img title="Allure Graphics" src="images/screen/allure_graphs_1.png" width="1920">
-
-<img title="Allure Graphics" src="images/screen/allure_graphs_2.png" width="1920">  
-</p>
 
 ___
 <a id="allure-testops"></a>
-## <img alt="Allure" height="25" src="images/logo/Allure2.svg" width="25"/></a>Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/3948/dashboards)</a>
+## <img alt="Allure" height="25" src="images/logo/Allure2.svg" width="25"/></a>Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/3954/dashboards)</a>
 
 ### *Allure TestOps Dashboard*
 
 <p align="center">  
-<img title="Allure TestOps Dashboard" src="images/screen/testops_dashboard.png" width="1920">  
+<img title="Allure TestOps Dashboard" src="images/screen/Allure_dashboard.png" width="1920">  
 </p>  
 
 
@@ -190,16 +140,16 @@ ___
 ### *Авто тест-кейсы*
 
 <p align="center">  
-<img title="Allure TestOps Tests" src="images/screen/testops_testcases.png" width="1919">  
+<img title="Allure TestOps Tests" src="images/screen/AllureTestOpsCases.png" width="1919">  
 </p>
 
 ___
 <a id="jira"></a>
-## <img alt="Allure" height="25" src="images/logo/Jira.svg" width="25"/></a> Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1039)</a>
+## <img alt="Allure" height="25" src="images/logo/Jira.svg" width="25"/></a> Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1043)</a>
 
 
 <p align="center">  
-<img title="Jira" src="images/screen/jira.png" width="1920">  
+<img title="Jira" src="images/screen/Jira.png" width="1920">  
 </p>
 
 ___
@@ -207,5 +157,5 @@ ___
 ## <img alt="Allure" height="25" src="images/logo/telegram_logo.svg" width="25"/></a> Уведомление в Telegram при помощи бота
 
 <p align="center">  
-<img title="Telegram Overview Dashboard" src="images/screen/telegram.png" width="452">  
+<img title="Telegram Overview Dashboard" src="images/screen/Telegram.png" width="452">  
 </p>
