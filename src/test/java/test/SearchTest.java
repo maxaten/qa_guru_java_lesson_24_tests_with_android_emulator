@@ -33,7 +33,7 @@ public class SearchTest extends TestBase {
     @Feature("Поиск")
     @Issue("HOMEWORK-1043")
     @DisplayName("Проверка поиска")
-    @Tags({@Tag("regress"), @Tag("emulator")})
+    @Tags({@Tag("smoke"), @Tag("regress")})
     void successfulSearchTest() {
 
 
@@ -57,7 +57,7 @@ public class SearchTest extends TestBase {
     @Feature("Поиск")
     @Issue("HOMEWORK-1043")
     @DisplayName("Проверка искомого запроса в статье")
-    @Tag("emulator")
+    @Tags({@Tag("smoke"), @Tag("regress")})
     void successfulSearchAndClickTest() {
 
         String name2 = "Batman";
