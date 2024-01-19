@@ -57,13 +57,13 @@ tasks.withType(Test) {
     }
 }
 
-task android(type: Test) {
+task wikiAndroid(type: Test) {
     useJUnitPlatform {
         includeTags("emulator")
     }
 }
 
-task wikipediaEmulator(type: Test) {
+task wikiBrowserstack(type: Test) {
     useJUnitPlatform {
         includeTags("browserstack")
     }
