@@ -1,6 +1,4 @@
-# Демо проект по автоматизации мобильного приложения [**Wikipedia
-
-**](https://github.com/wikimedia/apps-android-wikipedia/)
+# Демо проект по автоматизации мобильного приложения [**Wikipedia**](https://github.com/wikimedia/apps-android-wikipedia/)
 
 <p align="center">
 <img title="wikipedia" src="images/logo/wikipedia_logo_story.jpg">
