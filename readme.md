@@ -1,6 +1,4 @@
-# Демо проект по автоматизации мобильного приложения [**Wikipedia
-
-**](https://github.com/wikimedia/apps-android-wikipedia/)
+# Демо проект по автоматизации мобильного приложения [**Wikipedia**](https://github.com/wikimedia/apps-android-wikipedia/)
 
 <p align="center">
 <img title="wikipedia" src="images/logo/wikipedia_logo_story.jpg">
@@ -58,6 +56,20 @@
 <a href="https://www.atlassian.com/ru/software/jira/"><img src="images/logo/Jira.svg" title="Jira" width="50" height="50"  alt="Jira"/></a>
 <a href="https://core.telegram.org/bots/api/"><img src="images/logo/telegram_logo.svg" title="Telegram" width="50" height="50"  alt="Jira"/></a> 
 </p>
+
+* Проект написан в среде разработки программного обеспечения <code>Intelij_IDEA</code>.
+* В проекте автотесты написаны на языке <code>Java</code> с использованием фреймворка для тестирования <code>
+  Selenide</code>.
+* Использованы фреймворк <code>JUnit 5</code>.
+* В качестве сборщика был использован - <code>Gradle</code>.
+* Для удаленного запуска реализована джоба в <code>Jenkins</code>, которая выполняет тесты на устройстве Android в <code>Browserstack</code> с формированием отчета в <code>Allure</code> и
+  отправкой результатов в <code>Telegram</code> c помощью бота.
+* Осуществлена интеграция с <code>Allure TestOps</code> с <code>Jenkins</code>, при которой возможен запуск тестов
+  из <code>Allure TestOps</code>.
+* Осуществлена интеграция <code>Jira</code> с <code>Allure TestOps</code>, где рерультат прогона авто-тестов
+  подтягивается в задачу в <code>Jira</code>.
+* Так же реадизована возможность запускать тесты локально в <code>Android-studio</code> через эмулятор.
+
 
 ---
 <a id="cases"></a>
