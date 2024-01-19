@@ -6,6 +6,7 @@ import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 import pages.OnboardingPage;
 
@@ -20,7 +21,7 @@ public class OnbordingScreenTest extends TestBase {
     @Owner("Bruce")
     @Story("Wikia")
     @Feature("Онбординг")
-    @Tag("emulator")
+    @Tags({@Tag("smoke"), @Tag("regress")})
     @Issue("HOMEWORK-1043")
     @DisplayName("Проверка текстов на экранах онбординга")
     void checkOnboardingTest() {
